@@ -12,7 +12,7 @@ fn main() {
     let octal_with_prefix = 0o12;
 
     // Binary literals (base 2)
-    let binary = 0b1111_0000;
+    let binary = 0b1_1_11_000_0;  // The underscores in numeric literals in Rust are purely for readability.
     let binary_with_prefix = 0b1010_1010;
 
     // Byte (u8) literals
