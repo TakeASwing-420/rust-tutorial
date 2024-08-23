@@ -2,7 +2,7 @@
 name = "rust_tutorial"
 version = "0.1.0"
 edition = "2021"
-default-run = "default"
+default-run = "default" # the name of the executable
 
 [dependencies]
 rand = "0.8.5"
