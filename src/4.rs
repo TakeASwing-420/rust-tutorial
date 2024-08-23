@@ -1,4 +1,8 @@
+pub mod two;
+
 fn main() {
+    // Call the function from the `two` module
+    two::main();
     let x = 5;
 
     let x = x + 1;
