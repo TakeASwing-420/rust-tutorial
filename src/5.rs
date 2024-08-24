@@ -1,6 +1,7 @@
 fn main() {
     let byte: u8 = 0xFF;
     let byte_array: [u8; 3] = [0x12, 0x34, 0x56];
+    let my_array: [3; 4];
 
     // Print a single byte
     println!("Byte: {}", byte);
