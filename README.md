@@ -1,2 +1,2 @@
 ## Rust tutorial
-[Cargo.lock](Cargo.toml) and [Cargo.toml](Cargo.toml) files are intentionally excluded.
+Cargo.lock and Cargo.toml files are intentionally excluded.
