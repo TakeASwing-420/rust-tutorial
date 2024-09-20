@@ -12,7 +12,7 @@ fn main() {
 
 
     // Print the byte array
-    writeln!(handle, "Byte array:").unwrap();
+    write!(handle, "Byte array: ").unwrap();
     for b in &byte_array {
         writeln!(handle, "Byte array element in hex: {:02X}", b).unwrap();
     }

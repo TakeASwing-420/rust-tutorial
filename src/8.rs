@@ -18,15 +18,13 @@ fn main() {
         count += 1;
     };
     println!("End count = {count}, a = {a}"); // Print `a` value as well
-
-    for_loop();
     println!(); // Print a newline after the for loop output
     println!("Here is the reverse of the number 23451: {}", while_loop(23451));
 }
 
 #[allow(unused)]
 fn for_loop() {
-    for i in 0..=10 {  // = is inclusive loop range
+    for i in 0..11 {  // = is inclusive loop range
         print!("{i} ");
     }
 }
