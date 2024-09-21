@@ -16,9 +16,7 @@ fn main() {
         let mut guess = String::new(); // Create a mutable variable 'guess' to hold user input, initialized as an empty string
 
         // Read the user input from standard input (stdin) and store it in 'guess'
-        io::stdin()
-            .read_line(&mut guess)
-            .expect("Failed to read line"); // If reading fails, this message will be shown
+        io::stdin().read_line(&mut guess).expect("Failed to read line"); // If reading fails, this message will be shown
 
         // Convert the input string into a number (u32). If conversion fails (due to invalid input), continue to the next iteration
         let guess: u32 = match guess.trim().parse() {

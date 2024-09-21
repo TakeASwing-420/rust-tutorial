@@ -18,8 +18,8 @@ fn main() {
     println!("length of '{s}' is {res}");
 }
 
-fn calculate_length_with_returning_ownership(s: String) -> (String, usize) {
-    let length = s.len();   // calculate the length
+fn calculate_length_with_returning_ownership(s: String) -> (String, usize) { //s has moved in the formal parameter
+    let length = s.len();   // calculate the length 
     (s, length)             // return the string and its length as a tuple
 }
 
