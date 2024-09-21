@@ -1,6 +1,9 @@
 #[allow(unused_variables)]
 fn main() {
     let mut x = 10;
+    let mut y = x;
+    y = 90;
+    println!("y is {}", y);
     // let r1 = &x; // immutable reference 1
     // let r2 = &x; // immutable reference 2
     let r3 = &mut x;

@@ -6,7 +6,7 @@ fn main() {
     two::main();
     
     let x = 5;
-    let prompt = "The shadowing is over";
+    let prompt = "The shadowing is over"; // String literal, immutable
     let x = x + 1;  // Shadowing the previous value of x (5 + 1 = 6)
 
     {
