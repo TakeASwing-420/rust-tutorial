@@ -1,8 +1,10 @@
 use std::io;
+use std::io::Write;
 
 fn main() {
     let mut input = String::new(); // Correct way to create a new String
-    print!("Enter input: ");
+    print!("Enter input: "); // Print without newline
+    io::stdout().flush().expect("Failed to flush stdout"); // Manually flush stdout
     io::stdin().read_line(&mut input).expect("we couldn't read!");
 
     let (index, substring) = just_for_fun(&input);

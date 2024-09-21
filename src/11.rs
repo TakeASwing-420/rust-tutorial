@@ -19,7 +19,7 @@ fn main() {
 
     // 5. Left alignment
     let left_aligned = "Rust";
-    println!("Left-aligned: '{:<10}'", left_aligned);
+    println!("Left-aligned: '{:0<10}'", left_aligned);
 
     // 6. Formatting with named arguments
     println!("{name} is {age} years old.", name = name, age = age);
