@@ -6,6 +6,10 @@ fn main() {
     let r3 = &mut x;
 
     println!("r3: {}", r3);
+    {
+        let a = 10;
+    }
+    //  print!(a);
 
     let s = String::from("Hello World");
     let (s, res) = calculate_length_with_returning_ownership(s); // Getting back ownership
