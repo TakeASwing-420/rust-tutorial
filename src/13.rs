@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 struct User {
     active: bool,
     username: String,  // String does not implement the Copy trait
@@ -6,7 +7,7 @@ struct User {
 }
 
 fn main() {
-    let user1 = User {
+    let mut user1 = User {
         active: true,
         username: String::from("someusername123"),
         email: String::from("someone@example.com"),
@@ -17,6 +18,11 @@ fn main() {
         email: String::from("another@example.com"), // New email
         ..user1  // Copy other fields from user1
     };
-
-    println!("{}", user1.username);  // ERROR: user1.username has been moved!
+    user1.sign_in_count += 1;
+    println!("{}", user1.sign_in_count);
+    println!("{}", user2.sign_in_count); 
+    /*  
+    println!("{}", user1.username);
+     */
+    // ERROR: user1.username has been moved!
 }
