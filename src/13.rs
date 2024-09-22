@@ -1,4 +1,5 @@
 #[allow(dead_code)]
+#[derive(Debug)]
 struct User {
     active: bool,
     username: String,  // String does not implement the Copy trait
@@ -21,6 +22,7 @@ fn main() {
     user1.sign_in_count += 1;
     println!("{}", user1.sign_in_count);
     println!("{}", user2.sign_in_count); 
+    println!("here is the user {user2:?}");
     /*  
     println!("{}", user1.username);
      */
