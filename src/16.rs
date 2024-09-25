@@ -1,4 +1,5 @@
 fn main(){
+    #[derive(Debug)]
     enum SpreadsheetCell {
         Int(i32),
         Float(f64),
@@ -10,6 +11,10 @@ fn main(){
         SpreadsheetCell::Text(String::from("blue")),
         SpreadsheetCell::Float(10.12),
     ];
+
+    for i in &row{
+        println!("{i:?}");
+    }
 
 
     /*let mut vola = vec![1, 2, 3, 4, 5];
