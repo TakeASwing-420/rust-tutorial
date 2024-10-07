@@ -24,7 +24,7 @@ path = "src/22.rs"
 name = "binary1"
 path = "src/23.rs"
 ```
-4. run a particular binary lie this
+4. run a particular binary like this
 ```bash
 cargo run --bin binary1
 ```
